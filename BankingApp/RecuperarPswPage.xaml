@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BankingApp.RecuperarPswPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand"  Padding="15" Spacing="10">
+            <Label x:Name="lblRegistro" Text="Ingrese su correo electrónico" HorizontalOptions="CenterAndExpand" TextColor="Teal" FontAttributes="Bold" />
+            
+            <Entry x:Name="txtEmail" HorizontalOptions="Fill" Placeholder="Email" PlaceholderColor="Gray" BackgroundColor="Beige" TextColor="Black" />
+            <Button x:Name="btnRecuperar" Text="Recuperar contraseña" BackgroundColor="Teal" TextColor="White" FontAttributes="Bold" Clicked="Handle_Clicked"/>           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

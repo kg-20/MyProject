@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BankingApp.RegistrarUsrPage">
+    <ContentPage.Content>
+
+    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" BackgroundColor="White" Padding="15" Spacing="10">
+        <Image Source="IMG/user-4.png" HeightRequest="150" WidthRequest="200" />
+            <Label x:Name="lblRegistro" Text="Ingrese sus datos"  HorizontalOptions="CenterAndExpand" TextColor="Teal" FontAttributes="Bold"/>
+            <Entry x:Name="txtNombre" Placeholder="Nombre" PlaceholderColor="Gray" BackgroundColor="Beige" MaxLength="15"/>
+            <Entry x:Name="txtApellidos" Placeholder="Apellidos" PlaceholderColor="Gray" BackgroundColor="Beige" MaxLength="25"/>
+            <Entry x:Name="txtId" Placeholder="Identificación" PlaceholderColor="Gray" BackgroundColor="Beige" />
+            <Entry x:Name="txtEmail" Placeholder="Email" PlaceholderColor="Gray" BackgroundColor="Beige" />
+            <Entry x:Name="txtTelefono" Placeholder="Teléfono" PlaceholderColor="Gray" BackgroundColor="Beige" MaxLength="8"/>
+            <Entry x:Name="txtPsw" Placeholder="Contraseña" PlaceholderColor="Gray" BackgroundColor="Beige" />
+            <Entry x:Name="txtConfirmarPsw" Placeholder="Confirmar contraseña" PlaceholderColor="Gray" BackgroundColor="Beige" TextColor="Black"/>
+            <Button x:Name="btnRegistrarUsr" Text="Registrarme" BackgroundColor="Teal" TextColor="White" FontAttributes="Bold" Clicked="RegistrarUsr_Clicked"/>          
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

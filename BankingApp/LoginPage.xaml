@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BankingApp.LoginPage">
+    <ContentPage.Content>
+
+    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand"  Padding="15" Spacing="7" >
+            <Label Text="Bienvenido a su banco en línea" TextColor="Teal" HorizontalOptions="Center" FontAttributes="Bold" />
+            <Image Source="IMG/imgBanco.png" HeightRequest="100" WidthRequest="100" />
+
+            <Entry x:Name="txtUsuario" Text="" Placeholder="Usuario"  BackgroundColor="Beige" />
+            <Entry x:Name="txtContrasena" Text="" Placeholder="Contraseña" IsPassword="True"   BackgroundColor="Beige" />
+            <Button x:Name="btnInicioSesion" Text="Ingresar" BackgroundColor="Teal" TextColor="White" FontAttributes="Bold" Clicked="Ingresar_Clicked"/>
+            <Button x:Name="btnRecuperarPsw" Text="Recuperar contraseña" BackgroundColor="Silver" TextColor="Teal"  FontAttributes="Bold" Clicked="RecuperarPsw_Clicked"/>
+            <Button x:Name="btnRegistrarUsr" Text="Nuevo Usuario" BackgroundColor="Silver" TextColor="Teal"   FontAttributes="Bold" Clicked="RegistrarNuevoUsr_Clicked"/>
+
+
+     </StackLayout>   
+    </ContentPage.Content>
+</ContentPage>
